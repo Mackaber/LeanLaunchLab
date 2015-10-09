@@ -39,6 +39,7 @@ group :production, :staging do
   gem "therubyracer", "0.12.2"
   gem "unicorn", "4.3.1"
   gem "whenever", "0.9.4"
+  gem "rails_12factor"
 end
 
 group :development do
