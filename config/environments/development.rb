@@ -30,7 +30,7 @@ LeanLaunchLab::Application.configure do
   config.action_mailer.default_url_options = { :protocol => "http", :host => 'localhost', :port => 3000 }
   
   # Do not compress assets
-  config.assets.compress = false
+  config.assets.compress = true
 
   # Expands the lines which load the assets
   config.assets.debug = true
@@ -43,3 +43,4 @@ LeanLaunchLab::Application.configure do
   config.active_record.auto_explain_threshold_in_seconds = 0.5
 end
 
+REDIS = Redis.new(:host => "localhost", :port => 6379)
